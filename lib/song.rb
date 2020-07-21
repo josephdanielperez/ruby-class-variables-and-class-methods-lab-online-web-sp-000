@@ -5,15 +5,18 @@ attr_reader
 
 @@count = 0
 @@artists = []
+@@genres = []
 
   def initialize(name, artist, genre)
+
     @@count += 1
+    @@artists << artist
+    @@genres << genre
+
     @name = name
     @artist = artist
     @genre = genre
-    if @@artists.include?(@artist)
-    else @@artists << @artist
-    end
+    
   end
 
   def self.count
