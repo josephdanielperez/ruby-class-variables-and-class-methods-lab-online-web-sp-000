@@ -11,6 +11,9 @@ attr_reader
     @name = name
     @artist = artist
     @genre = genre
+    if @@artists.include?(@artist)
+    else @@artists << @artist
+    end
   end
 
   def self.count
