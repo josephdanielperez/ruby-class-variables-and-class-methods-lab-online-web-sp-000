@@ -8,7 +8,6 @@ attr_reader
 @@genres = []
 
   def initialize(name, artist, genre)
-
     @@count += 1
     @@artists << artist
     @@genres << genre
@@ -16,7 +15,13 @@ attr_reader
     @name = name
     @artist = artist
     @genre = genre
+  end
 
+    key = genre;
+  if @@genre_count.has_key?(key)
+    @@genre_count[key] = @@genre_count[key] + 1
+  else
+    @@genre_count[key] = 1
   end
 
   def self.count
@@ -28,7 +33,7 @@ attr_reader
   end
 
   def self.genres
-    @@genres.uniq
+    @@genres_genre.count
   end
 
   def self.genre_count
