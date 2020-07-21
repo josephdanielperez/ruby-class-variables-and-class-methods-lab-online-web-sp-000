@@ -32,7 +32,9 @@ attr_reader
   end
 
   def self.genre_count
-    @@genres.count
+    @@genres.each do |genre|
+      genre.count
+    end
   end
 
 end
