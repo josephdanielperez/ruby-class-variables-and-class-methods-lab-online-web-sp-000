@@ -33,15 +33,11 @@ attr_reader
   end
 
   def self.genres
-    @@genres_genre.count
+    @@genres
   end
 
   def self.genre_count
-    array = []
-    @@genres.each do |genre|
-      array << genre[genre.count]
-    end
-    array
+    @@genre_count
   end
 
 end
