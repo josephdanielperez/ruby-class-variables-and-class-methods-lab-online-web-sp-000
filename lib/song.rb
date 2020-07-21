@@ -31,4 +31,8 @@ attr_reader
     @@genres.uniq
   end
 
+  def self.genre_count
+    @@genres.uniq.count
+  end
+
 end
