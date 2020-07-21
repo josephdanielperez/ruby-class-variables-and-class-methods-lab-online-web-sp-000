@@ -27,4 +27,8 @@ attr_reader
     @@artists.uniq
   end
 
+  def self.genres
+    @@genres.uniq
+  end
+
 end
