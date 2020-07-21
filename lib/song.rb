@@ -32,7 +32,7 @@ attr_reader
   end
 
   def self.genre_count
-    @@genres.uniq.count
+    @@genres.count
   end
 
 end
